@@ -31,6 +31,25 @@ const convertUnit = () => {
   resultTxt.textContent = result;
 };
 
+
+//? Hvordan vil dette se ut med if else?:
+// if (unit.value === "lbs2kg") {
+//   result = `${(input.value / 2.2).toFixed(2)}kg`;
+// } else if (unit.value === "kg2lbs") {
+//   result = `${(input.value * 2.2).toFixed(2)}lbs`;
+// } else if (unit.value === "inch2cm") {
+//   result = `${(input.value * 2.54).toFixed(2)}cm`;
+// }else if (unit.value === "cm2inch") {
+//   result = `${(input.value / 2.54).toFixed(2)}inch`;
+// }else if (unit.value === "mile2km") {
+//   result = `${(input.value / 1.6).toFixed(2)}km`;
+// }else if (unit.value === "km2mile") {
+//   result = `${(input.value * 1.6).toFixed(2)}mile`;
+// } else {
+//   result = "Error";
+// }
+// resultTxt.textContent = result;
+
 /*//////////////////////////////////*/
 // BMI calculator
 ////////////////////////////////////*/
@@ -65,6 +84,21 @@ function calculateBMI() {
     message = "Overweight";
   } else {
     message = "Obese";
+
+//? Hvordan vil dette se ut som en switch/case?
+// switch (true) {
+//   case resultBmi <= 18.5:
+//     message = "Underweight";
+//   break;
+//   case resultBmi <= 25:
+//     message = "Normal";
+//   break;
+//   case resultBmi <= 30:
+//     message = "Overweigth";
+//   break;
+//   default:
+//     message = "Obese"
+// }
 
     // Add humorous console logs and build the message
     if (resultBmi <= 35) {
